@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		count_strings(char const *s, char c)
+int	count_strings(char const *s, char c)
 {
 	int	act_pos;
 	int	str_count;
@@ -61,7 +61,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = count_strings(s, c);
-	tab = (char **)malloc(sizeof(char*) * (words + 1));
+	tab = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!tab)
 		return (NULL);
 	i = 0;
